@@ -10,37 +10,42 @@
 </head>
 <body>
 
+    <!-- LOGO -->
+
     <header class="flex justify-center sticky">
-    <img src="imagenes/logo.svg" alt="Logo del sitio" class="w-28" />
+    <img src="imagenes/logo.svg" alt="Logo del sitio" class="w-28 md:w-56" />
     </header>
 
     <main>
 
-        <!-- INICIO -->
+        <!-- MENU NAVEGACION -->
 
-        <nav class="sticky top-0 hidden">
-            <ul class="flex justify-evenly bg-gray-200 z-50">
-                <li class="p-3 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-lg">Sobre Mi</a></li>
-                <li class="p-3 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-lg">Tecnologias</a></li>
-                <li class="p-3 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-lg">Contacto</a></li>
-                <li class="p-3 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-lg">Trabajos</a></li>
+        <nav class="sticky top-0 hidden w-full">
+            <ul class="flex justify-evenly bg-gray-200">
+                <li class="w-full py-2 border-r-2 border-gray-300 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Sobre Mi</a></li>
+                <li class="w-full py-2 border-r-2 border-gray-300 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Tecnologias</a></li>
+                <li class="w-full py-2 border-r-2 border-gray-300 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Contacto</a></li>
+                <li class="w-full py-2 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Trabajos</a></li>
             </ul>
         </nav>
-        <section class="h-screen w-10/12 mx-auto border-b-2 border-blue-300 inicio">
+
+        <!--INICIO MOBILE/TABLET-->
+        <section class="pb-20 w-10/12 mx-auto border-b-2 border-blue-300 inicio">
             <div>
-                <h1 class="text-4xl text-center font-bold pt-14 pb-20 text-blue-700 titulo">Desarrollador<br>
+                <h1 class="text-4xl md:text-6xl text-center font-bold pt-14 pb-20 text-blue-700 titulo">Desarrollador<br>
                     En desarrollo</h1>
             </div>
-            <div class="flex flex-col items-center">
-                <div>
-                    <h2 class="text-xl font-bold pb-3 text-blue-700">Sobre Mi</h2>
-                    <p class="text-sm pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi ea illum non vitae sapiente ullam ad maxime sunt quibusdam deleniti laboriosam tempora, mollitia quisquam asperiores neque. Eius, accusantium obcaecati.</p>
+            <div class="flex flex-col items-center md:flex-row gap-x-8">
+                <div class="md:w-6/12">
+                    <h2 class="text-xl font-bold pb-3 text-blue-700 md:text-3xl">Sobre Mi</h2>
+                    <p class="text-sm pb-10 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi ea illum non vitae sapiente ullam ad maxime sunt quibusdam deleniti laboriosam tempora, mollitia quisquam asperiores neque. Eius, accusantium obcaecati.</p>
                 </div>
-                <div>
-                    <img src="imagenes/mi-avatar.svg" alt="Mi avatar" class="w-56">
+                <div class="md:w-6/12 flex flex-col items-center">
+                    <img src="imagenes/mi-avatar.svg" alt="Mi avatar" class="w-56 pb-3" />
+                    <p class="text-base md:text-xl text-blue-600 pb-10"><b>Misael Aon</b></p>
                 </div>
             </div>
-            <nav class="w-10 h-10 rounded-full bg-blue-600 fixed bottom-3 right-3">
+            <nav class="w-10 h-10 rounded-full bg-blue-600 fixed bottom-3 right-3 md:hidden">
                 <!--Botón de navigación-->
             </nav>
         </section>
@@ -58,38 +63,38 @@
 
         <section class="w-10/12 mx-auto border-b-2 border-blue-300">
             <div>
-                <h2 class="pt-24 pb-10 text-center text-3xl font-bold text-blue-700">Tecnologias</h2>
+                <h2 class="pt-24 pb-10 text-center text-3xl md:text-4xl font-bold text-blue-700">Tecnologias</h2>
                 <div class="flex items-center">
-                    <img src="imagenes/logo-html.svg" alt="logo hmtl" class="w-24">
+                    <img src="imagenes/logo-html.svg" alt="logo hmtl" class="w-24 md:w-36">
                     <div class="flex">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <img src="imagenes/logo-css.svg" alt="logo css" class="w-24">
+                    <img src="imagenes/logo-css.svg" alt="logo css" class="w-24 md:w-36">
                     <div class="flex">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <img src="imagenes/logo-js.svg" alt="logo js" class="w-24">
+                    <img src="imagenes/logo-js.svg" alt="logo js" class="w-24 md:w-36">
                     <div class="flex">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
                     </div>
                 </div>
                 <div class="flex items-center">
-                    <img src="imagenes/logo-tailwind.svg" alt="logo tailwind" class="w-24">
+                    <img src="imagenes/logo-tailwind.svg" alt="logo tailwind" class="w-24 md:w-36">
                     <div class="flex">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
-                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12">
                     </div>
                 </div>
             </div>
@@ -98,12 +103,12 @@
         <!-- SECCION TRABAJOS -->
         
         <section class="w-10/12 mx-auto pb-5 border-b-2 border-blue-300">
-            <h2 class="pt-24 pb-10 text-center text-3xl font-bold text-blue-700">Mis trabajos</h2>
+            <h2 class="pt-24 pb-10 text-center text-3xl md:text-4xl font-bold text-blue-700">Mis trabajos</h2>
             <div class="border-2 p-4 border-slate-300 rounded-md shadow-xl">
                 <a href="https://misaaon.github.io/vivir-con-grandeza/" target="_blank">
                     <img src="imagenes/trabajo-1.png" alt="trabajo 1" class="w-full">
                 </a>
-                <p class="text-sm mt-3">
+                <p class="text-base mt-3">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex repellat fugiat repudiandae ducimus eius deserunt sed aperiam amet quo architecto temporibus praesentium sunt nemo omnis reprehenderit, illum dignissimos molestiae nam.
                 </p>
             </div>
@@ -112,11 +117,11 @@
         <!-- FORMULARIO -->
 
         <section class="mt-24 w-10/12 mx-auto border-blue-300">
-            <h2 class=" text-3xl font-bold text-blue-700 mb-10">Contactame</h2>
+            <h2 class=" text-3xl md:text-5xl font-bold text-blue-700 mb-10">Contactame</h2>
             <form action="#" method="post" class="flex flex-col">
-                <input type="text" name="nombre" placeholder="Nombre" class="border-b-2 border-blue-300 hover:border-blue-600 bg-inherit outline-none text-sm w-8/12"/>
-                <textarea name="comentario" id="mensaje" cols="30" rows="5" placeholder="comentame sobre tu proyecto :)" class="outline-none border-b-2 border-blue-300 mt-5 text-sm"></textarea>
-                <input type="submit" value="Enviar" class="m-5 rounded-md bg-blue-600 active:bg-blue-800 text-white" />
+                <input type="text" name="nombre" placeholder="Nombre" class="border-b-2 border-blue-300 hover:border-blue-600 bg-inherit outline-none text-sm md:text-lg w-8/12 md:w-4/12" />
+                <textarea name="comentario" id="mensaje" cols="30" rows="5" placeholder="comentame sobre tu proyecto :)" class="outline-none border-b-2 border-blue-300 mt-5 text-sm md:text-lg md:w-8/12"></textarea>
+                <input type="submit" value="Enviar" class="m-5 rounded-md bg-blue-600 active:bg-blue-800 text-white w-5/12 md:4/12 text-center md:text-xl self-center py-1 px-3 md:py-2 md:px-4" />
             </form>
         </section>
     </main>
