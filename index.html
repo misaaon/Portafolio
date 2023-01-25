@@ -4,33 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Misael Aon</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/64f534fad9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="imagenes/logo.svg" type="image/x-icon" />
 </head>
 <body>
 
     <!-- LOGO -->
 
-    <header class="flex justify-center sticky">
-    <img src="imagenes/logo.svg" alt="Logo del sitio" class="w-28 md:w-56" />
+    <header class="flex justify-center w-full">
+        <img src="imagenes/logo.svg" alt="Logo del sitio" class="w-28 md:w-56" />
     </header>
 
-    <main>
+    <main class="w-9/12 mx-auto">
 
         <!-- MENU NAVEGACION -->
 
-        <nav class="sticky top-0 hidden w-full">
-            <ul class="flex justify-evenly bg-gray-200">
-                <li class="w-full py-2 border-r-2 border-gray-300 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Sobre Mi</a></li>
-                <li class="w-full py-2 border-r-2 border-gray-300 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Tecnologias</a></li>
-                <li class="w-full py-2 border-r-2 border-gray-300 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Contacto</a></li>
+        <nav class="sticky top-0 hidden w-full bg-white">
+            <ul class="flex justify-evenly">
+                <li class="w-full py-2 border-r-2 border-blue-600 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Sobre Mi</a></li>
+                <li class="w-full py-2 border-r-2 border-blue-600 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Tecnologias</a></li>
+                <li class="w-full py-2 border-r-2 border-blue-600 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Contacto</a></li>
                 <li class="w-full py-2 text-center hover:bg-blue-600 hover:text-white"><a href="#" class="text-sm md:text-lg">Trabajos</a></li>
             </ul>
         </nav>
 
         <!--INICIO MOBILE/TABLET-->
-        <section class="pb-20 w-10/12 mx-auto border-b-2 border-blue-300 inicio">
+        <section class="pb-20 border-b-2 border-blue-300 inicio lg:hidden">
             <div>
                 <h1 class="text-4xl md:text-6xl text-center font-bold pt-14 pb-20 text-blue-700 titulo">Desarrollador<br>
                     En desarrollo</h1>
@@ -45,23 +47,71 @@
                     <p class="text-base md:text-xl text-blue-600 pb-10"><b>Misael Aon</b></p>
                 </div>
             </div>
-            <nav class="w-10 h-10 rounded-full bg-blue-600 fixed bottom-3 right-3 md:hidden">
-                <!--Botón de navigación-->
-            </nav>
         </section>
 
-        <section class="inicio-desktop">
+        <!-- INICIO DESKTOP -->
 
+        <section class="hidden lg:flex lg:justify-center lg:items-center lg:gap-x-40 inicio">
+            <div class="text-5xl font-bold text-blue-600">
+                <h2>Desarrollador <br /> en Desarrollo</h2>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-y-8">
+                <img src="imagenes/mi-avatar.svg" alt="Mi Avatar" class="w-full"/>
+                <p class="font-bold text-xl text-blue-600"><bold>Misael Aon</bold></p>
+            </div>
         </section>
 
+        <!-- SOBRE MI DESKTOP-->
 
-        <section class="sobre_mi-desktop">
+        <section class="hidden lg:flex lg:items-center lg:justify-center lg:mt-40 lg:gap-x-40">
+            <div class="w-6/12">
+                <h2 class="text-xl font-bold pb-3 text-blue-600 md:text-4xl">Sobre Mi</h2>
+                <p class="text-sm pb-10 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore commodi ea illum non vitae sapiente ullam ad maxime sunt quibusdam deleniti laboriosam tempora, mollitia quisquam asperiores neque. Eius, accusantium obcaecati.</p>
+            </div>
 
+            <!-- TECNOLOGIA DESKTOP-->
+
+            <div class="w-6/12 flex flex-col justify-center">
+                <h2 class="pt-24 pb-10 text-center text-3xl md:text-4xl font-bold text-blue-700">Tecnologias</h2>
+                <div class="flex items-center">
+                    <img src="imagenes/logo-html.svg" alt="logo hmtl" class="w-24 md:w-36 lg:w-24">
+                    <div class="flex">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagenes/logo-css.svg" alt="logo css" class="w-24 md:w-36 lg:w-24">
+                    <div class="flex">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagenes/logo-js.svg" alt="logo js" class="w-24 md:w-36 lg:w-24">
+                    <div class="flex">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <img src="imagenes/logo-tailwind.svg" alt="logo tailwind" class="w-24 md:w-36 lg:w-24">
+                    <div class="flex">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                        <img src="imagenes/estrella.svg" alt="imagen estrella" class="w-8 md:w-12 lg:w-8">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Sección TECNOLOGIA-->
+        <!-- SECCION TECNOLOGIA-->
 
-        <section class="w-10/12 mx-auto border-b-2 border-blue-300">
+        <section class="border-b-2 border-blue-300 lg:hidden">
             <div>
                 <h2 class="pt-24 pb-10 text-center text-3xl md:text-4xl font-bold text-blue-700">Tecnologias</h2>
                 <div class="flex items-center">
@@ -102,21 +152,23 @@
 
         <!-- SECCION TRABAJOS -->
         
-        <section class="w-10/12 mx-auto pb-5 border-b-2 border-blue-300">
+        <section class="pb-5 border-b-2 border-blue-300">
             <h2 class="pt-24 pb-10 text-center text-3xl md:text-4xl font-bold text-blue-700">Mis trabajos</h2>
-            <div class="border-2 p-4 border-slate-300 rounded-md shadow-xl">
-                <a href="https://misaaon.github.io/vivir-con-grandeza/" target="_blank">
-                    <img src="imagenes/trabajo-1.png" alt="trabajo 1" class="w-full">
-                </a>
-                <p class="text-base mt-3">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex repellat fugiat repudiandae ducimus eius deserunt sed aperiam amet quo architecto temporibus praesentium sunt nemo omnis reprehenderit, illum dignissimos molestiae nam.
-                </p>
+            <div class="flex justify-evenly">
+                <div class="border-2 p-4 border-slate-300 rounded-md shadow-xl lg:w-4/12">
+                    <a href="https://misaaon.github.io/vivir-con-grandeza/" target="_blank">
+                        <img src="imagenes/trabajo-1.png" alt="trabajo 1" class="w-full">
+                    </a>
+                    <p class="text-base mt-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex repellat fugiat repudiandae ducimus eius deserunt sed aperiam amet quo architecto temporibus praesentium sunt nemo omnis reprehenderit, illum dignissimos molestiae nam.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- FORMULARIO -->
 
-        <section class="mt-24 w-10/12 mx-auto border-blue-300">
+        <section class="mt-24 border-blue-300">
             <h2 class=" text-3xl md:text-5xl font-bold text-blue-700 mb-10">Contactame</h2>
             <form action="#" method="post" class="flex flex-col">
                 <input type="text" name="nombre" placeholder="Nombre" class="border-b-2 border-blue-300 hover:border-blue-600 bg-inherit outline-none text-sm md:text-lg w-8/12 md:w-4/12" />
@@ -126,8 +178,16 @@
         </section>
     </main>
 
-    <footer class="bg-blue-600">
-        <small class="text-white flex justify-center">Copy Misael Aon 2022</small>
+    <footer class="bg-blue-600 flex justify-evenly items-center">
+        <img src="imagenes/logo.svg" alt="Logo" class="w-12">
+        <small class="text-white flex justify-center text-slate-50 md:text-xl md:text-bold">Gracias por tu visita!</small>
+        <nav>
+            <ul class="flex flex-col items-center text-xl text-slate-50 md:flex-row lg:text-3xl">
+                <li class="md:p-3"><a href="#instagram" class="hover:text-slate-300"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="md:p-3"><a href="#github" class="hover:text-slate-300"><i class="fa-brands fa-github"></i></a></li>
+                <li class="md:p-3"><a href="#linkedin" class="hover:text-slate-300"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
     </footer>
     <script src="js/app.js"></script>
 </body>
